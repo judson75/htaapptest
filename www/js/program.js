@@ -3,7 +3,7 @@ var app = {
     // Application Constructor
     initialize: function() {
         this.bindEvents();
-		alert("1");
+		document.write("Hello World!");
     },
     // Bind Event Listeners
     //
@@ -56,6 +56,10 @@ var app = {
         console.log('Received Event: ' + id);
     }
 };
+
+$(document).ready( function() {
+	document.write("Hello World 33!");
+});
 
 $(document).on('click', '.loginButton', function() {
 	alert("M");
