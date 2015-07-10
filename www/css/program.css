@@ -45,23 +45,6 @@ body {
     width:100%;
 }
 
-/* Portrait layout (default) */
-.splash {
-    height: 100%;
-	width: 100%;
-	text-align: center;
-}
-
-#hta-logo {
-	position: absolute;
-	width: 90%;
-	max-width: 250px;
-	height: auto;
-	top: 50%;
-	left: 50%;
-	margin: -50px auto 0 -125px;	
-}
-
 .btn {
   background: #3498db;
   background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
@@ -79,6 +62,8 @@ body {
   text-decoration: none;
   border: none;
   cursor: pointer;
+  width: 100%;
+  max-width: 800px;
 }
 
 .btn:hover {
@@ -91,68 +76,15 @@ body {
   text-decoration: none;
 }
 
-h1 {
-    font-size:24px;
-    font-weight:normal;
-    margin:0px;
-    overflow:visible;
-    padding:0px;
-    text-align:center;
-}
-
-.event {
-    border-radius:4px;
-    -webkit-border-radius:4px;
-    color:#FFFFFF;
-    font-size:12px;
-    margin:0px 30px;
-    padding:2px 0px;
-}
-
-.event.listening {
-    background-color:#333333;
-    display:block;
-}
-
-.event.received {
-    background-color:#4B946A;
-    display:none;
-}
-
-#click_button {
-	margin-top: 10px;
-}
-
-.received {
-	display:none;
-}
-
 #myImage {
 	display: none;
 	width: 100%;
 	height: auto;
 }
 
-/* Landscape layout (with min-width) */
-@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
-    
-}
-
-
-
-@keyframes fade {
-    from { opacity: 1.0; }
-    50% { opacity: 0.4; }
-    to { opacity: 1.0; }
-}
- 
-@-webkit-keyframes fade {
-    from { opacity: 1.0; }
-    50% { opacity: 0.4; }
-    to { opacity: 1.0; }
-}
- 
-.blink {
-    animation:fade 3000ms infinite;
-    -webkit-animation:fade 3000ms infinite;
+#program-content {
+	height: 100%;
+	width: 90%;
+	max-width: 800px;
+	margin: 0 auto;	
 }
